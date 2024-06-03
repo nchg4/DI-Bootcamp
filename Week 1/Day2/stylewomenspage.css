@@ -1,0 +1,34 @@
+/* Adding a black background color to my top navigation */
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  /* Styling the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: rgb(255, 255, 255);
+    float: right;
+  }
+
+  footer{
+    font-family: 'Special Elite'; 
+    font-size: 17px;
+  }
+
+  span{
+    float: left;
+  }
+
+  h1{
+    text-align: center;
+  }
