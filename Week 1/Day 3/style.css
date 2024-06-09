@@ -1,0 +1,66 @@
+body {
+    font-size: 16px;
+    background-color: rgb(188, 54, 54);
+    color: red;
+}
+
+header,
+footer {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+background-color: lightgreen;
+padding: 10px;
+margin: 10px;
+border: 5px solid rgb(55, 0, 9);
+}
+
+/* media query
+min width: 600px -all the big screens
+mad width: 500px -all the small screens */
+
+@media only screen  and
+(min-width: 1000px) {
+        body{
+                background-color: lightblue;
+        }
+        header, footer {
+            background-color: lightgreen;
+        }
+}
+@media (max-width: 500px)  {
+    body {
+        background-color: lightcoral;
+
+    }
+    header, footer {
+        background-color: lightyellow;
+    }    
+}
+
+@media (max-width: 350px) {
+    body{
+        background-color: red;
+    }
+}
+
+@media print {
+    body, header, footer, main{
+        background-color: white;
+        color: white;
+    }
+}
+/* ^-screen size, as you move it and make it bigger and smaller the changes will take place */
+
+/* 
+all
+screen 
+print 
+speech - for blind ppl (software hat reads for people who cannot seee)
+tv  - For large screen
+project 
+braille 
+*/

@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 440px;
+    height: 440px;
+    border: 1px solid #000000;
+    grid-gap: 5px;
+}
+
+.container-div {
+    width: 20px;
+    height: 20px;
+}
+
+/* Every 3 divs change the colors */
+
+/* .container-div :nth-child(3n +1){
+    background-color: #ca5b00;
+}
+
+.container-div :nth-child(3n +2){
+    background-color: #dba047;
+}
+
+.container-div  :nth-child(3n +3){
+    background-color: #ff7300;
+} */
+
+/* You can make it all the odds:EX: in the () add -odds
+for evens do the same. In the example it is everyy 3 coloums; hence the 3 in the() */
+
+.container div :nth-child(7n + 1) {
+    background-color: aqua;
+}
+
+.container div :nth-child(7n + 2) {
+    background-color: rgb(21, 0, 255);
+}
+
+.container div :nth-child(7n + 3) {
+    background-color: rgb(225, 0, 255);
+}
+
+.container div :nth-child(7n + 4) {
+    background-color: rgb(169, 43, 142);
+}
+
+.container div :nth-child(7n + 5) {
+    background-color: rgb(0, 255, 4);
+}
+
+.container div :nth-child(7n + 6) {
+    background-color: rgb(54, 148, 148);
+}
+
+.container div :nth-child(7n + 7) {
+    background-color: rgb(251, 0, 255);
+}

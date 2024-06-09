@@ -1,0 +1,61 @@
+.outer-div {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 2fr; */
+    grid-template-columns: 18% auto 200px;
+    /* grid-template-columns: 100px 200px auto; */
+    grid-template-rows: 100px 300px;
+    grid-gap: 20px;
+    /* ^for the rows and the collums */
+    
+}   
+
+.inner-div {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.box1 {
+        /* display: flex; -Just to show you can also do something seperate to all boxes seperately */
+    background-color: #f1c40f;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* SAME THING SHORTER AND FASTER WAY */
+    /* grid-column: 1 / 2; */
+}
+.box2 {
+    background-color: #e74c3c;
+}
+.box3 {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    background-color: #3498db;
+    /* grid-column: 1 / 3; */
+}
+.box4 {
+    background-color: #2ecc71;
+}
+.box5 {
+    background-color: #9b59b6;
+    /* grid-column: 1 / 5; */
+}
+.box6 {
+    background-color: #34495e;
+}
+/* p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+} */
+
+/* @media (max-width: 1000px){
+    .box3 {
+display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .outer-div {
+display: block;
+    }
+} */

@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(255, 255, 255);
+    /* overflow: hidden; */
+}
+
+.topnav {
+    background-color: #000000;
+    /* height: 4em; */
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+  }
+  
+ 
+
+
+.topnav a {
+    float: right;
+    color: #96323276;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+.topnav a.active {
+    color: rgb(255, 255, 255);
+    float: left;
+   
+  }
+
+#instagram-button {
+    top: 70px;
+    right: -102px;
+    color: #6d6a6a;
+    &:hover {
+      color: #ffffff;
+      background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+      );
+      right: 0;
+  
+    }
+        }
+
+#whatsapp-button {
+     top: 70px;
+    right: -102px;
+    color: #615e5e;
+    &:hover {
+        color: #ffffff;
+        background: radial-gradient(
+            circle at 33% 100%,
+            #84dc6c 4%,
+            #eaf3ea 30%,
+            #36e355 62%,
+            #259c29 85%,
+            #46c22a
+          );
+            right: 0;
+          
+    }
+        }
+
+#linkedin-button {
+            top: 70px;
+           right: -102px;
+           color: #615e5e;
+           &:hover {
+               color: #fff;
+               background: radial-gradient(
+                   circle at 33% 100%,
+                   #fafafa 4%,
+                   #2f5bb3 30%,
+                   #113297 62%,
+                   #274fc7 85%,
+                   #301ce3
+                 );
+                   right: 0;
+                 
+           }
+               }
+#github-button {
+    top: 70px;
+    right: -102px;
+    color: #615e5e;
+    &:hover {
+        color: #fff;
+        background: radial-gradient(
+            circle at 33% 100%,
+            #fafafa 4%,
+            #1b1d23 30%,
+            #4e4e4e 62%,
+            #1a1a1b 85%,
+            #010108
+                                   );
+                       right: 0;
+                     
+               }
+                   }
+                   #dev-button {
+                    top: 70px;
+                   right: -102px;
+                   color: #615e5e;
+                   &:hover {
+                       color: #fff;
+                       background: radial-gradient(
+                           circle at 33% 100%,
+                           #fafafa 4%,
+                           #000000 30%,
+                           #ffffff 62%,
+                           #1a1a1b 85%,
+                           #010108
+                         );
+                           right: 0;
+                         
+                   }
+                       }
+
+                       .overlay-text{
+                        position: absolute;
+                        top: 40%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #000000;
+                        padding: 10px 20px;
+                        font-size: 8px;
+                        text-align: center;
+                    }
+
+.container { display: inline-block; }   
+
+.text {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+                typing 2s steps(19),
+                cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+            50% { border-color: transparent;}
+}
+
+@keyframes typing {
+            from { width: 0;}
+}
+
+.button {
+    align-items: center;
+    
+   
+  }
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    color: lightslategray;
+}
+
+.container {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+a {
+    color: white;
+}
+
+
+#contactform {
+    height: 215px;
+    /* .right {
+      float: right;
+    } */
+    input {
+      margin-bottom: 14px;
+      width: 100%;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      padding-left: 15px;
+      height: 44px;
+      border-radius: 0;
+    }
+    textarea {
+      margin-bottom: 14px;
+      width: 100%;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      padding: 15px;
+      height: 218px;
+      border-radius: 0;
+    }
+    .comments {
+        border: 1px solid lightgray;
+    }
+
+    }
+
+    h6 {
+        color: #ffffff;
+    }

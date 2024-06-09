@@ -1,0 +1,57 @@
+/* Background color */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Adding a black background color to my top navigation */
+.topnav {
+    background-color: #7b61ac;
+    overflow: hidden;
+  }
+  
+  /* Styling the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  img {
+    overflow: hidden;
+  }
+
+  .overlay-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 35px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 400px;
+} 
+
+p {
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+}
+
+h5 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+

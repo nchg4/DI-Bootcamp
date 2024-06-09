@@ -1,0 +1,38 @@
+.outer-div {
+    width: 100%;
+    height: 400px;
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    /* row */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    align-items: center;
+    /* ^center of the page (up to down) */
+    /* align-items: stretch; */
+}
+
+.inner-div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box1{
+    background-color: #af47ff;
+    order: 2;
+ /* ^I can change the placemen order*/
+}
+.box2{
+    background-color: #ff4747;
+}
+.box3{
+    background-color: #47ff47;
+}
