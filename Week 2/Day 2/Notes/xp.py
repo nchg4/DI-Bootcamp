@@ -71,13 +71,26 @@ for topping in toppings:
 print("\nTotal price of your pizza: ${:.2f}".format(total_price))
 
 #Cinemax; Exercise 9:
-ages = (3, 12)
+def calculate_ticket_price(age):
+    if age < 3:
+        return 0
+    elif 3 <= age <= 12:
+        return 10
+    else:
+        return 15
+num_people = int(input("How many people are in your family? "))
+total_cost = 0
+for i in range(num_people):
+    age = int(input("Enter the age of person {}: ".format(i+1)))
+    ticket_price = calculate_ticket_price(age)
+    total_cost += ticket_price
+print("Total cost of all the family's tickets: ${}".format(total_cost))
+teenagers = ["Eitan", "Noam", "Eden", "Ariela"]
+nonpermitted_teenagers = []
+for name in teenagers:
+    age = int(input("Enter the age of {}: ".format(name)))
+    if 16 <= age <= 21:
+        nonpermitted_teenagers.append(name)
+print("No entry:", nonpermitted_teenagers)
 
-total = 0
-for age in ages:
-    if age > 18:
-        total += 15
-    elif 8<age<18:
-        total += 10
 
-print(total) 
