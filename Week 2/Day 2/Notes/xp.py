@@ -52,7 +52,14 @@ while user_name != my_name:
 print("Welcome, {}!".format(my_name))
 
 #Favorite fruits; Exercise 7:
-favorite_fruit = input
+user=input("Your favorite fruit(s) (seperate fruits with only a single space):")
+values = user.split()
+print (values)
+fav_fruit = input("Enter your favorite fruit:")
+if fav_fruit in values:
+    print("You chose one of your favorite fruits! Enjoy!")
+else: 
+    print("You chose a new fruit. I hope you enjoy!")
 
 #Who ordered a pizza?; Exercise 8:
 toppings = []
@@ -93,4 +100,16 @@ for name in teenagers:
         nonpermitted_teenagers.append(name)
 print("No entry:", nonpermitted_teenagers)
 
-
+#Sandwich orders; Exercise 10:
+sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich",
+"Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+while "Pastrami sandwich" in sandwich_orders:
+    sandwich_orders.remove("Pastrami sandwich")
+    print(sandwich_orders)
+finished_sandwiches = []
+sandwich = sandwich_orders.pop
+finished_sandwiches.append("Your Tun sandwich is ready")
+finished_sandwiches.append("Your Avocado sandwich is ready")
+finished_sandwiches.append("Your Egg sandwich is ready")
+finished_sandwiches.append("Your Chicken sandwich is ready")
+print(finished_sandwiches)
