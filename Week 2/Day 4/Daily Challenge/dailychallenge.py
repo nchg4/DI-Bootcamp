@@ -15,7 +15,7 @@ matrix = [
 
 print(matrix[1][0],matrix[2][0],matrix[3][0],matrix[4][0],
        matrix[3][1], matrix[0][1],matrix[1][1],matrix[3][1],
-       matrix[4][1],matrix[5][1],matrix[6][1],matrix[7][1],matrix[0][2],matrix[1][2]
+       matrix[4][1],matrix[5][1],matrix[6][1],matrix[7][1],matrix[0][2],matrix[1][2],matrix[7][2]
        )
 
 
