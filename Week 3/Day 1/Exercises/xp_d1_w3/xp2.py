@@ -1,4 +1,3 @@
-# 🌟 Exercise 2 : Dogs
 # Create a class called Dog.
 class Dog:
 
