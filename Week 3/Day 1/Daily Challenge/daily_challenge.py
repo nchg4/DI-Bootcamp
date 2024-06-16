@@ -1,7 +1,7 @@
 # Daily Challenge
 
 class Farm:
-    def __init__(self, farm_name):
+    def __init__(self, farm_name,):
         self.farm_name = farm_name
         self.animals = {}
 
@@ -12,10 +12,10 @@ class Farm:
             self.animals[animal_type] = count
 
     def get_info(self):
-        info = (f"{self.farm_name}'s farm\n\n")
+        info = (f"{self.farm_name}'s farm\n")
         for animal, count in self.animals.items():
             info += (f"{animal} : {count}\n")
-        info += "\nE-I-E-I-O!"
+        info += "E-I-E-I-O!"
         return info
 
 macdonald = Farm("McDonald")
@@ -27,10 +27,12 @@ print(macdonald.get_info())
 
 # Expanding the farm
 
-# def get_animal_types():
-
-animal_types = macdonald.get_animal_types()
-print("Animal types on the farm:", animal_types)
+# Define the function to get animal types
+def get_animal_types(farm_instance):
+    animal_types = list(farm_instance.animals.keys())  
+    return animal_types
 
 print(macdonald.get_info())
 
+animal_types = get_animal_types(macdonald)
+print("Animal types on the farm:", animal_types)
