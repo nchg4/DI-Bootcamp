@@ -12,5 +12,13 @@ class Circle:
 
 circle1 = Circle(5, 10)
 print(circle1)
-# print(repr(circle1))
+print(repr(circle1))
+
+circle2 = Circle(10, 20)
+print(circle2)
+print(repr(circle2))
+
+
+        
+
 
