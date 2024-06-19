@@ -1,8 +1,7 @@
 file_location = "file.txt"
 import random
 from typing import List
-# import random
-# from typing import List
+
 
 # 3
 # with open(file_location) as file:

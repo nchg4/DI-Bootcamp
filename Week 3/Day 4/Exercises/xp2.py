@@ -13,6 +13,7 @@ sampleJson = """{
    }
 }"""
 
+
 # Access the nested “salary” key from the JSON-string above.
 json_data = json.loads(sampleJson)
 salary_value = json_data['company']['employee']['payable']['salary']
