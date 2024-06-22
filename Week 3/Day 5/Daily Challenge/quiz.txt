@@ -1,0 +1,31 @@
+What is a class?:
+A class is for creating objects  that have attributes  and methods.
+It defines a data structure that saves data for the object.
+
+
+What is an instance?:
+An instance is a specific realization of a class, like an object
+
+
+What is encapsulation?:
+Encapsulation is bundling attributes and methods that can operate on the data into one class
+
+
+What is abstraction?:
+Abstraction is  showing only the essential features of the object. It is focused on what the object does instead of how it works 
+
+
+What is inheritance?:
+Inheritance is where there is a parent classand child class, and the child can inherent from the parent 
+
+
+What is multiple inheritance?:
+Multiple inheritance is  where a class can inherit attributes and methods from more than one parent class (grandparent/parent/child)
+
+
+What is polymorphism?:
+ It allows methods to be defined in multiple classes with the same name, but different implementations.
+
+
+What is method resolution order or MRO?:
+Method Resolution Order is the order in which base classes are searched for. 
