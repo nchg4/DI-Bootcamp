@@ -71,14 +71,18 @@ while True:
                     print(f"This location has {1} volunteer opportunity available.")
                     print()
                 print("Thank you for choosing Chessed Finder!")
+
                 break  # End the program
             elif user_response == 'no':
                 print("Thank you for choosing Chessed Finder!")
+                input("Would you like to leave your E-Mail and get notified on volunteering opprotunities?:")
+
                 break  # End the program
             else:
                 print("Invalid response. Please enter 'yes' or 'no'.")
         else:
             print("Sorry, we don't have any volunteer opportunities matching your choice.")
-            input
+            input("Leave you email to hear about future volunteering opportunities:")
+            break
     else:
         break

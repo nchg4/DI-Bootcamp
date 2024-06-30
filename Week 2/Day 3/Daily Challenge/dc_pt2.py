@@ -1,16 +1,5 @@
-# 1
-word = input("Enter a word: ")
+# Challenge num. 2:
 
-index_dict = {}
-
-for i, char in enumerate(word):
-    if char not in index_dict:
-        index_dict[char] = []
-    index_dict[char].append(i)
-
-print(index_dict)
-
-# 2
 def items_you_can_afford(items_purchase, wallet):
     # Convert the wallet amount from string to an int
     wallet_amount = int(wallet.replace('$', '').replace('', ''))
@@ -35,7 +24,7 @@ def items_you_can_afford(items_purchase, wallet):
         return "Nothing"
 
 
-# exs
+
 items_purchase1 = {
   "Water": "$1",
   "Bread": "$3",
