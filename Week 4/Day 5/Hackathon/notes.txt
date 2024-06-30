@@ -1,15 +1,25 @@
-chai life line
-frienship circle
-cteen
-ba
+--Miam--
+Chai Life Line -Hospital
+frienship circle -Special Needs Kids 
+cteen -Youth
+BA -Kids/Youth
+NCSY - Youth
+_____________________________________________
+--Orlando--
+JCC
 -
+-
+-
+-
+_____________________________________________
+Name: organization_name
+City: organization_city
+Phone Number: organization_number
+Address: organization_address
 
-jcc
-org.name
-phone number
-address
+Avalibility: random_number (not <0 not >50)
+--if <0 return"None"(maybe?)
 
--spots avalible -random 
 
 
 
