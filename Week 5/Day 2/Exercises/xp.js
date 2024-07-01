@@ -64,7 +64,7 @@ Hint: What is the relationship between the index of the last element in the arra
 // console.log(last);
 
 /** pt2: */
-const people = ["Greg", "Mary", "Devon", "James"];
+// const people = ["Greg", "Mary", "Devon", "James"];
 
 // #1
 // for (let i = 0; i < people.length; i++) {
@@ -72,12 +72,12 @@ const people = ["Greg", "Mary", "Devon", "James"];
 // }
 
 // #2
-for (let i = 0; i < people.length; i++) {
-    console.log(people[i]);
+// for (let i = 0; i < people.length; i++) {
+//     console.log(people[i]);
     
-    if (people[i] === "Devon") {
-        break; 
-    }
-}
+//     if (people[i] === "Devon") {
+//         break; 
+//     }
+// }
 
 
