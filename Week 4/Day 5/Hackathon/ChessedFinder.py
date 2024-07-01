@@ -1,4 +1,4 @@
-import random
+# import random
 
 Miami_Organizations = (
     ('Chai Lifeline', '269 Stirling Road', 'Miami', '1-305-956-9990', 'Economic/Medical Struggles'),
@@ -59,7 +59,7 @@ while True:
 
         if related_organizations:
             remaining_opportunities = sum(1 for org in related_organizations)
-            print(f"There are a total of {len(related_organizations)} {user_choice} volunteer opportunities available.")
+            # print(f"There are a total of {len(related_organizations)} {user_choice} volunteer opportunities available.")
             print(f"There are {remaining_opportunities} remaining volunteer opportunities available. Would you like to get their contact info? (yes/no)")
             user_response = input().lower().strip()
             if user_response == 'yes':
@@ -75,14 +75,19 @@ while True:
                 break  # End the program
             elif user_response == 'no':
                 print("Thank you for choosing Chessed Finder!")
-                input("Would you like to leave your E-Mail and get notified on volunteering opprotunities?:")
+            choice = input("Leave your email to recieve updates from Chessed Finder): ").strip()
 
-                break  # End the program
+            if choice == 'No':
+                print ("Thank you for choosing Chessed Finder!")
             else:
-                print("Invalid response. Please enter 'yes' or 'no'.")
+                print("Thank you for choosing Chessed Finder!")
+            
+                break  # End the program
         else:
-            print("Sorry, we don't have any volunteer opportunities matching your choice.")
-            input("Leave you email to hear about future volunteering opportunities:")
-            break
+            print("Invalid response. Please enter 'yes' or 'no'.")
     else:
-        break
+                print("Sorry, we don't have any volunteer opportunities matching your choice.")
+                input("Leave you email to hear about future volunteering opportunities:")
+                break
+# else: 
+#     break
