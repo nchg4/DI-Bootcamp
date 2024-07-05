@@ -1,0 +1,43 @@
+/* body{
+    background: linear-gradient(red, yellow);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+} */
+
+ul{
+    list-style: none;
+}
+
+ li{
+display: flex;
+align-items: center;
+gap: 2px;
+
+
+}
+
+li* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+li i{
+    --width: 16px;
+    width: var(--width);
+    height: var(--width);
+    cursor: pointer;
+}
+
+li*::before{
+    position: absolute;
+    inset: 0%;
+    display: grid;
+    place-items: center;
+}
+
+
+li.is-done{
+    text-decoration: line-through;
+}
