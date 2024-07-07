@@ -12,6 +12,4 @@ for country in countries_info:
     insert_country(country)
 
 
-# Understanding the data
-# Test manually - automise with function (api, database)
-# Connect everything inside main.py
+
