@@ -1,19 +1,19 @@
-/* body{
-    background: linear-gradient(red, yellow);
+body{
+    background: linear-gradient(rgb(247, 70, 108), rgb(174, 31, 62));
     background-size: cover;
     height: 100vh;
     margin: 0;
-} */
+}
 
 ul{
     list-style: none;
+    text-align: center;
 }
 
  li{
 display: flex;
 align-items: center;
 gap: 2px;
-
 
 }
 
@@ -41,3 +41,60 @@ li*::before{
 li.is-done{
     text-decoration: line-through;
 }
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+
+div {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    width: 30%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
