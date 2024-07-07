@@ -1,0 +1,13 @@
+/* xp7 */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.user-info img.profile-pic {
+    width: 30px; /* Adjust profile picture size */
+    height: 30px;
+    border-radius: 50%; /* Rounded profile picture */
+    margin-right: 8px; /* Space between picture and username */
+}
