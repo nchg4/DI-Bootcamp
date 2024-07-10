@@ -1,0 +1,19 @@
+/** http method */
+/** forms in html */
+/** JSON */
+
+
+/** http method **/
+/*
+GET -putting a url into the int. is a get request on the front end 
+POST 
+DELETE 
+UPDATE 
+PUT
+PATCH
+*/
+
+/** http - > text */
+// in HTML file
+
+/** JSON */
