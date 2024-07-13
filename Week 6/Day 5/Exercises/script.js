@@ -70,3 +70,17 @@ const robots = [
       image:'https://robohash.org/10?200x200'
     }
     ];
+
+for (const robot of robots){
+    const html = `
+                    <img width="128" height="128" class="m-auto rounded-circle" src="./robot1.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">${robot.name}</h5>
+                        <p class="card-text">${robot.email}</p>
+                    </div>
+            </div>`;
+        const div = document.createElement("div")
+        div.classList.add("card", "bg-success", "text-dark")
+        div.innerHTML = html;
+        document.getElementById("container").appendChild(div);
+}
