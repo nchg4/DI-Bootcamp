@@ -17,7 +17,45 @@ fetch(url)
     });
 
 
+    /** 🌟 Exercise 2 : Giphy API */
+            /**???????**/
 
-    // if (!response.ok) {
-        //         throw new Error(`HTTP error! Status: ${response.status}`);
-        //     }
+
+    /** 🌟 Exercise 3 : Async Function*/ 
+    async function fetchData() {
+        try {
+          const response = await fetch('https://www.swapi.tech/api/starships/9/');
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          const objectStarWars = await response.json();
+          console.log(objectStarWars);
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    fetchData();
+
+
+    // 🌟 Exercise 4: Analyze
+    // function resolveAfter2Seconds() {
+    //     return new Promise(resolve => {
+    //         setTimeout(() => {
+    //             resolve('resolved');
+    //         }, 2000);
+    //     });
+    // }
+    
+    // async function asyncCall() {
+    //     console.log('calling');
+    //     let result = await resolveAfter2Seconds();
+    //     console.log(result);
+    // }
+    
+    // asyncCall();
+
+    /** outcome:
+     * calling
+     * restult //after two seconds//
+     * */
+
