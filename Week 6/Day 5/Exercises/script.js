@@ -84,3 +84,6 @@ for (const robot of robots){
         div.innerHTML = html;
         document.getElementById("container").appendChild(div);
 }
+
+
+
