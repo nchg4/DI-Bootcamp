@@ -1,0 +1,86 @@
+body{
+    /* background-color: #e6ffde; */
+    /* background-color: #FFE5B4 */
+    background-image: linear-gradient(#FFE5B4, #d5aa58);
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: cover; /* Ensures it covers the entire area */
+    background-attachment: fixed; /* Optional: keeps the background fixed while scrolling */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure full height of the viewport */
+}
+h1{
+    font-size: 60px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: center;
+    color: #323531;
+
+}
+
+
+#gif-form{
+    margin: auto; 
+    width: 300px; 
+    text-align: center; 
+}
+
+
+button {
+    background-color: none;
+    border: 1px;
+    padding: 8px 26px;
+    color: #565656;
+    border-radius: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+button:hover {
+    background-color: #9a9999; 
+}
+
+#gif-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#gif-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#gif-submit {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 20px; 
+    color: #5d5d5d; 
+}
+
+#gif-submit:hover {
+    color: #2c2c2c; 
+}
+
+
+button {
+    background: transparent; 
+    border: none;
+    border-radius: 5px; 
+    color: #1f1e1e; 
+    cursor: pointer; 
+    padding: 8px 12px; 
+    font-size: 16px; 
+}
+
+#gif-form {
+    display: flex; 
+    align-items: center; 
+}
