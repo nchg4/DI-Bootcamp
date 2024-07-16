@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Challenge: Create a solar system</title>
-        <script src="dc.js" defer async></script>
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+        <h1>Currency Converter</h1>
+        <h2>From:</h2>
+        <select name="from" id="from">
+        </select>
+        <div>
+        <button id="switch">Switch</button>
+        </div>
+        <h2>To:</h2>
+        <select name="from" id="to">
+        </select>
+        <h3>Amount</h3>
+        <input type="text" id="input"/>
+        <p id="summary"></p>
+        
+        </div>
+    </div>
 
-        <style>
-            body {
-                background-color: black;
-                padding: 10px;
-            }
-            .planet {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                text-align: center;
-                padding: 10px;
-                position: relative;
-                border: 2px solid white;
-            }
-            .moon {
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background: rgb(255, 255, 255);
-                border: 5px solid rgb(81, 81, 81);
-            }
-        </style>
-    </head>
-    <body>
-
-    <section class="listPlanets"></section>
-    </body>
+    <script src="js.js"></script>
+</body>
 </html>
