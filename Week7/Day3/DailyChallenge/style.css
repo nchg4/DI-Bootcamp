@@ -3,14 +3,18 @@
 }
 
 body{
+    background-image: url(https://www.peopleandpaintings.com/uploads/news/image_NLc1yKxKSdvLYO47WQd8UJreB_detail.jpg);
     margin: 0;
     padding: 0;
-    background-image: url(https://images.fineartamerica.com/images-medium-large-5/currency-of-the-world-garry-walton.jpg);
+    /* height: 100vh; 
+    width: 100vw; */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
 }
 
 .container{
     height: 100vh;
-    /* background-color: darkgrey; */
     display: grid;
     place-items: center;
 }
@@ -27,3 +31,8 @@ body{
 #switch {
     margin-block: 2em;
 }
+
+
+ div {
+   opacity: 0.3;
+ }
