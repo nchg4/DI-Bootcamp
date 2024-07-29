@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+/**xp1 */
+// import React from 'react';
+// import Car from './components/car';
 
-function App() {
+// const carinfo = { name: "Ford", model: "Mustang" };
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Car carInfo={carinfo} />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+/**xp2 */
+// import React from 'react';
+// import Events from './components/xp2';
+
+// const App = () => {
+//   return (
+//     <div className="App">
+//       <Events />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+/**xp3 */
+// import React from 'react';
+// import Phone from './components/xp3';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Phone Component</h1>
+//       <Phone />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+/**xp4 */
+import React from 'react';
+import Color from './components/xp4';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Color />
     </div>
   );
-}
+};
 
 export default App;
+
