@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-inline: auto;
+}
+
+.language {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 300px;
+    background-color: #ffebcd;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.language > span{
+    padding: 1rem;
+}
+
+.language button{
+    color: green;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.language button:hover{
+    scale: 1.05;
+}
