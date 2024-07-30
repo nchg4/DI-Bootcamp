@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --background-color: #f5f7fa;
+  --text-color: #333;
+  --input-background: #ffffff;
+  --input-border: #e0e0e0;
+  --success-color: #5cb85c;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container, .entered-info {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 45%;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.form-input, .form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-input:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.dietary-restrictions {
+  margin-bottom: 1rem;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+
+
+.entered-info p {
+  margin-bottom: 0.5rem;
+}
+
+.entered-info p strong {
+  color: var(--primary-color);
+}
+
+.gender-selection {
+  margin-bottom: 1rem;
+}
+
+.gender-selection input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.gender-selection label {
+  margin-right: 1rem;
+}
