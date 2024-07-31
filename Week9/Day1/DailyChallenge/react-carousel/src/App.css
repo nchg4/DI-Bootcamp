@@ -1,0 +1,43 @@
+/* Ensure the entire page takes up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Center the .App component */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  margin: 0;
+}
+
+/* Style for the legend text */
+.legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Image styling inside the carousel */
+.carousel .slide img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Center the carousel itself */
+.carousel {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
