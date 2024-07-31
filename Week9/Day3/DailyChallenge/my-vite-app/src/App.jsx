@@ -49,7 +49,6 @@ function App() {
     </div>
   );
 }
-
 function FormComponent({ formData, handleChange, handleSignUp }) {
   return (
     <div className="form-container">
