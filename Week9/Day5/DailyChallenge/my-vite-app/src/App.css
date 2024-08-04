@@ -1,8 +1,102 @@
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.calculator {
+  background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #2a2a2a;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #6a6a6a;
+  box-shadow: 0 0 0 2px rgba(106, 106, 106, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(145deg, #3a3a3a, #4a4a4a);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #4a4a4a, #5a5a5a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.clear-button {
+  background: linear-gradient(145deg, #d32f2f, #f47536);
+}
+
+.clear-button:hover {
+  background: linear-gradient(145deg, #f47536, #d32f2f);
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.result-positive {
+  color: #4CAF50;
+}
+
+.result-negative {
+  color: #FF5252;
+}
+
+.result-error {
+  color: #FF5252;
+  font-style: italic;
 }
 
 .logo {
