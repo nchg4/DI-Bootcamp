@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.todo-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+  text-align: center;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.add-button, .filter-button, .action-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+.add-button {
+  background-color: #7cdc80;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #9cdc9f;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  margin: 0 5px;
+  background-color: transparent;
+  color: #bbb9b9;
+  border: 1px solid #ddd;
+}
+
+.filter-button:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-button.active {
+  background-color: #a7b1ba;
+  color: white;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-checkbox:checked {
+  background-color: lightgray;
+  border: 2px solid lightgray;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.edit-input {
+  flex: 1;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.action-button {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #948e8e;
+  border: 1px solid #ddd;
+}
+
+.action-button:hover {
+  background-color: #f0f0f0;
+}
