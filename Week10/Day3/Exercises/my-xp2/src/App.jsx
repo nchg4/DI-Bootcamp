@@ -1,23 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import Calendar from './Calendar';
-import TaskList from './redux/TaskList';
-import AddTask from './redux/AddTask'; 
+import AddTodo from './redux/AddTodo';
+import TodoList from './redux/TodoList';
 
 const App = () => {
-  const [selectedDay, setSelectedDay] = useState(new Date().toISOString().split('T')[0]); // Default to today
-
-  return (
-    <Provider store={store}>
-      <div className="app">
-        <h1>Daily Planner</h1>
-        <Calendar selectedDay={selectedDay} onSelectDay={setSelectedDay} />
-        <TaskList selectedDay={selectedDay} />
-        <AddTask selectedDay={selectedDay} /> 
-      </div>
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <div className="app">
+                <h1>Todo List</h1>
+                <AddTodo />
+                <TodoList />
+            </div>
+        </Provider>
+    );
 };
 
 export default App;
