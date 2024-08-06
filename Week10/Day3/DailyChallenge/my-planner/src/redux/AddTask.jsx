@@ -7,17 +7,20 @@ const AddTask = ({ selectedDay }) => {
   const dispatch = useDispatch();
 
   const handleAddTask = () => {
-    const newTask = { id: Date.now(), name: taskName };
-    dispatch(addTask({ day: selectedDay, task: newTask }));
-    setTaskName('');
+    if (taskName.trim()) {
+      const newTask = { id: Date.now(), name: taskName };
+      dispatch(addTask({ day: selectedDay, task: newTask }));
+      setTaskName('');
+    }
   };
 
   return (
-    <div>
+    <div className="add-task">
       <input 
         type="text" 
         value={taskName} 
         onChange={(e) => setTaskName(e.target.value)} 
+        placeholder="Add a new task"
       />
       <button onClick={handleAddTask}>Add Task</button>
     </div>

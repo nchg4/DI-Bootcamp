@@ -1,0 +1,30 @@
+.calendar {
+    border: 1px solid #ddd; /* Light border around the calendar */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.react-calendar {
+    width: 100%;
+    max-width: 400px; /* Limit the width for better appearance */
+    margin: 0 auto; /* Center the calendar */
+}
+
+.react-calendar__tile {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 8px; /* Ensure all tiles have rounded corners */
+}
+
+.react-calendar__tile:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Highlighted day styles */
+.react-calendar__tile.highlighted-day {
+    background-color: white !important; /* White background for the selected day */
+    color: #007bff !important; /* Blue text color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Soft shadow */
+    border: 2px solid #007bff; /* Blue border for the highlighted day */
+}
