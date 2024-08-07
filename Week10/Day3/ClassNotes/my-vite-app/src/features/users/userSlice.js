@@ -1,43 +1,52 @@
-/** 
- [
-[id: 1, name: 'John Doe', email: 'john@doe.com'],
-[id: 2, name: 'Jane Doe', email: 'jane@doe.com'],
-[id: 3, name: 'Jill Doe', email: 'jill@doe.com'],
-]
-1) Display the users 
-2) Add a user 
-3) Add user with prepare 
- */
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-    users: [
-        { id: 1, name: 'John Doe', email: 'john@doe.com' },
-        { id: 2, name: 'Jane Doe', email: 'jane@doe.com' },
-        { id: 3, name: 'Jill Doe', email: 'jill@doe.com' },
-    ],
+  users: [
+    { id: 1, name: "John", email: "john@gmail.com" },
+    { id: 2, name: "Jane", email: "jane@gmail.com" },
+    { id: 3, name: "Jill", email: "jill@gmail.com" },
+  ],
 };
 
-const userSlice = createSlice({
-    name: 'users',
-    initialState,
-    reducers: {
-        displayUsers: (state) => {
-            return state.users; 
-        },
-        addUser: (state, action) => {
-            state.users.push(action.payload); 
-        },
-        addUserWithPrepare: {
-            reducer: (state, action) => {
-                state.users.push(action.payload);
-            },
-            prepare: (name, email) => {
-                return { payload: { id: Date.now(), name, email } }; 
-            },
-        },
+const usersSlice = createSlice({
+  name: "users",
+  initialState,
+  reducers: {
+    adduser: (state, action) => {
+      state.users.push({
+        id: nanoid(),
+        name: action.payload.name,
+        email: action.payload.email,
+      });
     },
+    addUserPrepare: {
+      reducer(state, action) {
+        state.users.push(action.payload);
+      },
+      prepare(name, email) {
+        return {
+          payload: { id: nanoid(), name, email },
+        };
+      },
+    },
+    setUsers: (state, action) => {
+      state.users = action.payload;
+    },
+  },
 });
 
-export const { displayUsers, addUser, addUserWithPrepare } = userSlice.actions;
-export default userSlice.reducer;
+export const { adduser, addUserPrepare, setUsers } = usersSlice.actions;
+
+export default usersSlice.reducer;
+
+/** 
+[
+  { id: 1, name: "Jhon", email: "jjj@gmail.com" },
+  { id: 2, name: "Anne", email: "aaa@gmail.com" },
+  { id: 3, name: "Dan", email: "ddd@gmail.com" },
+];
+
+1. Display the users
+2. Add a user 
+3. Add user with prepare
+*/

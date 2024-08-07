@@ -1,45 +1,76 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addUserWithPrepare } from './userSlice';
+import { useEffect } from "react"; // Ensure this is imported
+import { useSelector, useDispatch } from "react-redux";
+import { adduser, addUserPrepare, setUsers } from "./userSlice"; // Ensure you have a setUsers action
+import { useRef } from "react";
 
 const Users = () => {
-    const users = useSelector((state) => state.users.users);
-    const dispatch = useDispatch();
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+  const users = useSelector((state) => state.usersReducer.users);
+  const dispatch = useDispatch();
+  const userNameRef = useRef();
+  const userEmailRef = useRef();
 
-    const handleAddUser = () => {
-        if (name && email) {
-            dispatch(addUserWithPrepare(name, email)); // Use addUserWithPrepare
-            setName('');
-            setEmail('');
+  // Fetch users from the API
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
+        const data = await response.json();
+        // Dispatch an action to store fetched users in Redux
+        dispatch(setUsers(data)); // Use setUsers to store the fetched users
+      } catch (error) {
+        console.error("Failed to fetch users:", error);
+      }
     };
+    fetchUsers();
+  }, [dispatch]);
 
-    return (
-        <div>
-            <h1>User List</h1>
-            <ul>
-                {users.map((user) => (
-                    <li key={user.id}>{user.name} - {user.email}</li>
-                ))}
-            </ul>
-            <h2>Add User</h2>
-            <input 
-                type="text" 
-                value={name} 
-                onChange={(e) => setName(e.target.value)} 
-                placeholder="Name" 
-            />
-            <input 
-                type="email" 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)} 
-                placeholder="Email" 
-            />
-            <button onClick={handleAddUser}>Add User</button>
-        </div>
-    );
+  return (
+    <>
+      <h2>Users:</h2>
+      <div>
+        <input placeholder='Name' ref={userNameRef} />
+        <input placeholder='Email' ref={userEmailRef} />
+        <button
+          onClick={() =>
+            dispatch(
+              adduser({
+                name: userNameRef.current?.value,
+                email: userEmailRef.current?.value,
+              })
+            )
+          }
+        >
+          Add User
+        </button>
+        <button
+          onClick={() =>
+            dispatch(
+              addUserPrepare(
+                userNameRef.current?.value,
+                userEmailRef.current?.value,
+              )
+            )
+          }
+        >
+          Add Prepare User
+        </button>
+      </div>
+      <div>
+        {users.length > 0 ? (
+          users.map((item) => (
+            <div key={item.id}>
+              {item.id} . {item.name} , {item.email}
+            </div>
+          ))
+        ) : (
+          <p>No users found.</p>
+        )}
+      </div>
+    </>
+  );
 };
 
 export default Users;
