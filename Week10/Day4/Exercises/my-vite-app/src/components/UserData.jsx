@@ -12,7 +12,6 @@ const UserData = () => {
 
   return (
     <div>
-      {error && <p>{error}</p>}
       <ul>
         {data.map((user) => (
           <li key={user.id}>{user.name}</li>
