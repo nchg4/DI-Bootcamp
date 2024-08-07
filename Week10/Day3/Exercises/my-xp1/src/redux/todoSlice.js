@@ -22,7 +22,7 @@ const todoSlice = createSlice({
 });
 
 // Export actions
-export const { addTodo, toggleTodo, removeTodo } = todoSlice.actions; // Ensure 'removeTodo' is exported
+export const { addTodo, toggleTodo, removeTodo } = todoSlice.actions;
 
 // Export reducer
 export default todoSlice.reducer;
